@@ -1,0 +1,38 @@
+.secao-inicial {
+    width: 100%;
+    @include Flex(center, center);
+}
+
+.texto-inicial {
+    width: 50%;
+    padding: 30px;
+    @include Flex(center, flex-start); 
+    flex-direction: column;
+    gap: 15px;
+
+    h2 {
+        text-align: left;
+        font-size: 40px;
+        color: $marrom;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        margin-top: 10px;
+        color: $branco;
+        padding: 10px 35px;
+        background-color: $amarelo-claro;
+        border-radius: 20px;
+    }
+}
+
+.imagem {
+    width: 50%;
+
+    img {
+        width: 600px;
+    }
+}
