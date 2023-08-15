@@ -28,7 +28,7 @@ header {
   align-items: center;
   width: 100%;
   height: 100px;
-  background-color: #FBBD05;
+  background-color: #FCCB05;
 }
 header img {
   width: 170px;
@@ -124,6 +124,7 @@ header img:hover {
   height: 250px;
   background-color: #ffffff;
   border-radius: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,4 +147,141 @@ header img:hover {
   font-size: 12px;
   text-align: center;
   color: #151515;
+}
+
+.secao-calltoAction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(226, 226, 226, 0.3411764706);
+}
+
+.img-toAction {
+  width: 50%;
+}
+.img-toAction img {
+  width: 410px;
+}
+
+.txt-toAction h2 {
+  padding: 0px 120px;
+  color: #432921;
+}
+.txt-toAction p {
+  padding: 10px 120px;
+  font-size: 18px;
+  color: #151515;
+}
+.txt-toAction a {
+  margin-left: 110px;
+  margin-top: 10px;
+  color: #ffffff;
+  padding: 10px 35px;
+  background-color: #FCCB05;
+  border-radius: 20px;
+}
+
+.secao-solucoes {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #FCCB05;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secao-solucoes h2 {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.solucoes {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.solucoes .solucao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.solucoes a {
+  color: #ffffff;
+}
+
+.secao-contato {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secao-contato h2 {
+  width: 50%;
+  padding: 20px 40px;
+  font-size: 35px;
+  font-weight: 600;
+  color: #432921;
+}
+
+.formulario-contato {
+  width: 50%;
+}
+.formulario-contato form {
+  width: calc(100% - 20px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.formulario-contato form input, .formulario-contato form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #432921;
+  border-radius: 20px;
+}
+.formulario-contato form textarea {
+  resize: both;
+  max-width: 100%;
+  height: 99px;
+  overflow: hidden;
+}
+.formulario-contato form button {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #FBBD05;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.secao-cases {
+  width: 100%;
+  height: 80vh;
+  padding: 20px 0px;
+}
+.secao-cases h2 {
+  text-align: center;
+  color: #432921;
+}
+
+.secao-clientes {
+  width: 100%;
+  height: 80vh;
+  padding: 20px 0px;
+}
+.secao-clientes h2 {
+  text-align: center;
+  color: #432921;
 }/*# sourceMappingURL=main.css.map */

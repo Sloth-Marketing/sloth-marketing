@@ -1,0 +1,34 @@
+.secao-calltoAction {
+    @include Flex(space-around, center);
+    background-color: $cinza;
+}
+
+.img-toAction {
+    width: 50%;
+    img {
+        width: 410px;
+    }
+}
+
+.txt-toAction{
+    h2 {
+        padding: 0px  120px;
+        color: $marrom;
+    }
+
+    p {
+        padding: 10px  120px;
+        font-size: 18px;
+        color: $preto;
+    }
+    
+    a {
+        margin-left: 110px;
+        margin-top: 10px;
+        color: $branco;
+        padding: 10px 35px;
+        background-color: $amarelo-claro;
+        border-radius: 20px;
+    }
+}
+
