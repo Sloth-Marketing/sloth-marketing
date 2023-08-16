@@ -1,5 +1,5 @@
-// FONTES 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;900&display=swap');
+// FONTES
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&display=swap');
 
 // VARIÁVEIS DE CORES
 $amarelo-escuro: #fa9b04;
@@ -16,7 +16,7 @@ $cinza: #e2e2e22f;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Heebo';
 }
 
 html {
@@ -25,6 +25,7 @@ html {
 
 h2 {
     font-size: 40px;
+    // font-weight: 600;
 }
 
 a {
@@ -54,6 +55,8 @@ ul {
 @import './secaoInicial';
 @import './secaoServicos';
 @import './secaoCalltoaction';
-@import './secaoContato';
+// @import './secaoContato';
 @import './secaoCases';
 @import './secaoClientes';
+@import './barraFinal';
+@import './footer';
