@@ -98,7 +98,7 @@ header img:hover {
 .imagem img {
   display: block;
   width: 620px;
-  margin-bottom: -17px;
+  margin-bottom: -18px;
 }
 
 .secao-servicos {
@@ -315,12 +315,13 @@ footer {
 
 .secao-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
+  gap: 10px;
 }
 .secao-footer .secao {
   width: 20%;
-  padding: 0px 20px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
