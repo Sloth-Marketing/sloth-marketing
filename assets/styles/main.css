@@ -27,11 +27,11 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 75px;
   background-color: #FCCB05;
 }
 header img {
-  width: 170px;
+  width: 130px;
   transition: all 0.2s ease-in-out;
 }
 header img:hover {
@@ -57,7 +57,7 @@ header img:hover {
 
 .secao-inicial {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -87,6 +87,10 @@ header img:hover {
   padding: 10px 35px;
   background-color: #FCCB05;
   border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.texto-inicial a:hover {
+  transform: scale(1.1);
 }
 
 .imagem {
@@ -94,8 +98,8 @@ header img:hover {
 }
 .imagem img {
   display: block;
-  width: 680px;
-  margin-bottom: -35px;
+  width: 620px;
+  margin-bottom: -16px;
 }
 
 .secao-servicos {
@@ -150,10 +154,11 @@ header img:hover {
 }
 
 .secao-calltoAction {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(226, 226, 226, 0.3411764706);
+  background-color: rgba(226, 226, 226, 0.1843137255);
 }
 
 .img-toAction {
@@ -163,57 +168,35 @@ header img:hover {
   width: 410px;
 }
 
+.txt-toAction {
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+}
 .txt-toAction h2 {
-  padding: 0px 120px;
   color: #432921;
 }
 .txt-toAction p {
-  padding: 10px 120px;
+  margin-bottom: 10px;
   font-size: 18px;
   color: #151515;
 }
 .txt-toAction a {
-  margin-left: 110px;
-  margin-top: 10px;
   color: #ffffff;
-  padding: 10px 35px;
+  padding: 10px 30px;
   background-color: #FCCB05;
   border-radius: 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
 }
-
-.secao-solucoes {
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 20px;
-  background-color: #FCCB05;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.secao-solucoes h2 {
-  padding: 20px;
-  color: #ffffff;
-}
-
-.solucoes {
-  width: 100%;
-  margin: 0 auto;
-  padding: 30px 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.solucoes .solucao {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.solucoes a {
-  color: #ffffff;
+.txt-toAction a:hover {
+  transform: scale(1.1);
 }
 
 .secao-contato {
@@ -268,15 +251,67 @@ header img:hover {
 
 .secao-cases {
   width: 100%;
-  height: 80vh;
-  padding: 20px 0px;
+  height: 85vh;
+  padding: 60px 0px;
 }
 .secao-cases h2 {
   text-align: center;
   color: #432921;
+  padding-bottom: 20px;
+}
+
+.cases {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.cases .case-card {
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cases .case-card .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 30px;
+}
+.cases .case-card .card-text h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fa9b04;
+}
+.cases .case-card .card-text p {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.cases .case-card .card-text a {
+  margin-top: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #FCCB05;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+.cases .case-card .card-text a:hover {
+  transform: scale(1.1);
+}
+.cases .case-card .card-img img {
+  width: 200px;
+  padding: 20px;
+  border-radius: 30px;
 }
 
 .secao-clientes {
+  margin-top: 60px;
   width: 100%;
   height: 80vh;
   padding: 20px 0px;
@@ -284,4 +319,23 @@ header img:hover {
 .secao-clientes h2 {
   text-align: center;
   color: #432921;
+}
+
+.clientes {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.clientes .cliente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.clientes .cliente img {
+  width: 150px;
 }/*# sourceMappingURL=main.css.map */

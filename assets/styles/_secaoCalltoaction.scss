@@ -1,34 +1,45 @@
 .secao-calltoAction {
+    width: 100%;
     @include Flex(space-around, center);
     background-color: $cinza;
 }
 
 .img-toAction {
     width: 50%;
+
     img {
         width: 410px;
     }
 }
 
-.txt-toAction{
+.txt-toAction {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    @include Flexcolumn(space-around, flex-start);
+    gap: 20px;
+
     h2 {
-        padding: 0px  120px;
         color: $marrom;
     }
 
     p {
-        padding: 10px  120px;
+        margin-bottom: 10px;
         font-size: 18px;
         color: $preto;
     }
-    
+
     a {
-        margin-left: 110px;
-        margin-top: 10px;
         color: $branco;
-        padding: 10px 35px;
+        padding: 10px 30px;
         background-color: $amarelo-claro;
         border-radius: 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
-
