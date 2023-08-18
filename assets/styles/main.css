@@ -23,22 +23,47 @@ ul {
 }
 
 header {
+  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 55px;
+  height: 75px;
   background-color: #FCCB05;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
+}
+header .header-center {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  padding-left: 30px;
 }
 header img {
-  width: 100px;
+  border: 1px solid red;
+  width: 120px;
+  padding-left: 30px;
+  display: block;
   transition: all 0.2s ease-in-out;
 }
 header img:hover {
   transform: scale(1.1);
 }
+header .btn-menu-header {
+  border: 1px solid red;
+  background-color: transparent;
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  display: none;
+}
 
 .nav-menu ul {
+  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -54,23 +79,64 @@ header img:hover {
   color: #432921;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    padding: 0 20px;
+  }
+  header .header-center {
+    padding: 0;
+    width: 80%;
+  }
+  header .btn-menu-header {
+    display: block;
+  }
+  header .nav-menu ul {
+    position: absolute;
+    top: 75px;
+    background-color: #FCCB05;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  header .ativar-menu {
+    height: 200px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header-center {
+    width: 90%;
+  }
+  header img {
+    content: url("/img/sloth-logo-solo.png");
+    width: 70px;
+  }
+}
 .secao-inicial {
   width: 100%;
+  max-width: 1400px;
   height: 80vh;
   margin: 0 auto;
+  margin-top: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .texto-inicial {
-  width: 45%;
-  padding: 30px;
+  width: 55%;
+  padding: 60px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 15px;
+  gap: 60px;
 }
 .texto-inicial h2 {
   text-align: left;
@@ -92,31 +158,26 @@ header img:hover {
   transform: scale(1.1);
 }
 
-.imagem {
+.img-secao-inicial {
   width: 55%;
-}
-.imagem img {
   display: block;
-  width: 620px;
-  margin-bottom: -18px;
+  max-width: 700px;
+  align-self: flex-end;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .secao-inicial {
-    border: 1px solid red;
     width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 0px;
+    height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
   }
   .secao-inicial .texto-inicial {
     width: 100%;
-    padding: 10px;
-    border: 1px solid red;
+    padding-top: 50px;
+    gap: 30px;
   }
   .secao-inicial .texto-inicial h2 {
     margin: 0 auto;
@@ -124,19 +185,38 @@ header img:hover {
   }
   .secao-inicial .texto-inicial p {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     font-size: 20px;
   }
   .secao-inicial .texto-inicial a {
     margin: 0 auto;
   }
-  .secao-inicial .imagem {
-    width: 100%;
-  }
-  .secao-inicial .imagem img {
+  .img-secao-inicial {
     margin: 0 auto;
     width: 500px;
-    margin-bottom: -100px;
+    justify-self: flex-end;
+  }
+}
+@media screen and (max-width: 768px) {
+  .secao-inicial .texto-inicial h2 {
+    font-size: 30px;
+  }
+  .secao-inicial .texto-inicial p {
+    border: 1px solid red;
+    width: 90%;
+    font-size: 18px;
+  }
+  .img-secao-inicial {
+    margin: 0 auto;
+    width: 400px;
+    justify-self: flex-end;
+  }
+}
+@media screen and (max-width: 567px) {
+  .img-secao-inicial {
+    margin: 0 auto;
+    width: 300px;
+    justify-self: flex-end;
   }
 }
 .secao-servicos {
