@@ -101,6 +101,44 @@ header img:hover {
   margin-bottom: -18px;
 }
 
+@media screen and (max-width: 768px) {
+  .secao-inicial {
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .secao-inicial .texto-inicial {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red;
+  }
+  .secao-inicial .texto-inicial h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .secao-inicial .texto-inicial p {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 20px;
+  }
+  .secao-inicial .texto-inicial a {
+    margin: 0 auto;
+  }
+  .secao-inicial .imagem {
+    width: 100%;
+  }
+  .secao-inicial .imagem img {
+    margin: 0 auto;
+    width: 500px;
+    margin-bottom: -100px;
+  }
+}
 .secao-servicos {
   height: 80vh;
   background-color: #FCCB05;

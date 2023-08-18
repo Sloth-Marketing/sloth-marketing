@@ -45,3 +45,45 @@
         
     }
 }
+
+@media screen and (max-width: 768px) {
+    .secao-inicial {
+        border: 1px solid red;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .texto-inicial {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid red;
+            h2 {
+                margin: 0 auto;;
+                text-align: center;
+            }
+            p {
+                margin: 0 auto;
+                width: 70%;
+                font-size: 20px;
+            }
+            a {
+                margin: 0 auto;
+            }
+        }
+        .imagem {
+            width: 100%;
+            
+            img {
+                margin: 0 auto;    
+                width: 500px;
+                margin-bottom: -100px ;
+            }
+        }
+    }
+    
+}
