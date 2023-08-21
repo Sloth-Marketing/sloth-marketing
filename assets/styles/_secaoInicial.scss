@@ -5,19 +5,20 @@
     margin: 0 auto;
     margin-top: 75px;
     @include Flex(center, center);
+    // border: 1px solid red;
 }
 
 .texto-inicial {
-    width: 55%;
+    // width: 55%;
     padding: 60px;
     @include Flex(center, flex-start); 
     flex-direction: column;
     gap: 60px;
 
-    h2 {
+    h3 {
         text-align: left;
-        font-size: 40px;
-        color: $marrom;
+        font-size: 20px;
+        color: $amarelo-escuro;
     }
 
     p {
@@ -41,6 +42,7 @@
     display: block;
     max-width: 700px;
     align-self: flex-end;
+    padding: 60px 60px 0 60px;
 }
 
 @media screen and (max-width: 992px) {
@@ -53,13 +55,13 @@
             width: 100%;
             padding-top: 50px;
             gap: 30px;
-            h2 {
+            h3 {
                 margin: 0 auto;;
                 text-align: center;
             }
             p {
                 margin: 0 auto;
-                width: 80%;
+                width: 100%;
                 font-size: 20px;
             }
             a {
@@ -71,6 +73,7 @@
         margin: 0 auto;    
         width: 500px;
         justify-self: flex-end;
+        padding: 0;
     }
 
 }
@@ -78,11 +81,12 @@
 @media screen and (max-width: 768px) {
     .secao-inicial {
         .texto-inicial {
-            h2 {
-                font-size: 30px;
+            padding: 60px 0;
+            h3 {
+                font-size: 16px;
+                border: 1px solid red;
             }
             p {
-                border: 1px solid red;
                 width: 90%;
                 font-size: 18px;
             }

@@ -23,7 +23,6 @@ ul {
 }
 
 header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -35,7 +34,6 @@ header {
   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
 }
 header .header-center {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -44,7 +42,6 @@ header .header-center {
   padding-left: 30px;
 }
 header img {
-  border: 1px solid red;
   width: 120px;
   padding-left: 30px;
   display: block;
@@ -54,7 +51,6 @@ header img:hover {
   transform: scale(1.1);
 }
 header .btn-menu-header {
-  border: 1px solid red;
   background-color: transparent;
   border: none;
   font-size: 36px;
@@ -63,11 +59,11 @@ header .btn-menu-header {
 }
 
 .nav-menu ul {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 40px;
+  padding-right: 60px;
 }
 .nav-menu ul li {
   transition: all 0.2s ease-in-out;
@@ -81,11 +77,14 @@ header .btn-menu-header {
 
 @media screen and (max-width: 992px) {
   header {
-    padding: 0 20px;
+    padding: 0 60px;
   }
   header .header-center {
     padding: 0;
-    width: 80%;
+  }
+  header .header-center img {
+    padding: 0;
+    width: 100px;
   }
   header .btn-menu-header {
     display: block;
@@ -104,18 +103,22 @@ header .btn-menu-header {
     height: 0;
     overflow: hidden;
     transition: 0.5s;
+    padding-right: 0px;
   }
   header .ativar-menu {
     height: 200px !important;
   }
 }
 @media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
   header .header-center {
     width: 90%;
   }
-  header img {
+  header .header-center img {
     content: url("/img/sloth-logo-solo.png");
-    width: 70px;
+    width: 50px;
   }
 }
 .secao-inicial {
@@ -130,7 +133,6 @@ header .btn-menu-header {
 }
 
 .texto-inicial {
-  width: 55%;
   padding: 60px;
   display: flex;
   justify-content: center;
@@ -138,10 +140,10 @@ header .btn-menu-header {
   flex-direction: column;
   gap: 60px;
 }
-.texto-inicial h2 {
+.texto-inicial h3 {
   text-align: left;
-  font-size: 40px;
-  color: #432921;
+  font-size: 20px;
+  color: #fa9b04;
 }
 .texto-inicial p {
   font-size: 18px;
@@ -163,6 +165,7 @@ header .btn-menu-header {
   display: block;
   max-width: 700px;
   align-self: flex-end;
+  padding: 60px 60px 0 60px;
 }
 
 @media screen and (max-width: 992px) {
@@ -179,13 +182,13 @@ header .btn-menu-header {
     padding-top: 50px;
     gap: 30px;
   }
-  .secao-inicial .texto-inicial h2 {
+  .secao-inicial .texto-inicial h3 {
     margin: 0 auto;
     text-align: center;
   }
   .secao-inicial .texto-inicial p {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     font-size: 20px;
   }
   .secao-inicial .texto-inicial a {
@@ -195,14 +198,18 @@ header .btn-menu-header {
     margin: 0 auto;
     width: 500px;
     justify-self: flex-end;
+    padding: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  .secao-inicial .texto-inicial h2 {
-    font-size: 30px;
+  .secao-inicial .texto-inicial {
+    padding: 60px 0;
+  }
+  .secao-inicial .texto-inicial h3 {
+    font-size: 16px;
+    border: 1px solid red;
   }
   .secao-inicial .texto-inicial p {
-    border: 1px solid red;
     width: 90%;
     font-size: 18px;
   }
