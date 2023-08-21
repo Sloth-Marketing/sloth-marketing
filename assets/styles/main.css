@@ -12,6 +12,7 @@ html {
 
 h2 {
   font-size: 40px;
+  color: #432921;
 }
 
 a {
@@ -20,6 +21,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 header {
@@ -32,6 +37,7 @@ header {
   position: fixed;
   top: 0;
   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 header .header-center {
   width: 100%;
@@ -138,15 +144,19 @@ header .btn-menu-header {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 60px;
+  gap: 10px;
 }
 .texto-inicial h3 {
   text-align: left;
-  font-size: 20px;
+  font-size: 25px;
   color: #fa9b04;
 }
 .texto-inicial p {
+  font-size: 30px;
+}
+.texto-inicial .sub-texto {
   font-size: 18px;
+  line-height: 30px;
 }
 .texto-inicial a {
   margin-top: 10px;
@@ -182,14 +192,14 @@ header .btn-menu-header {
     padding-top: 50px;
     gap: 30px;
   }
-  .secao-inicial .texto-inicial h3 {
-    margin: 0 auto;
-    text-align: center;
-  }
   .secao-inicial .texto-inicial p {
     margin: 0 auto;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .secao-inicial .texto-inicial .sub-texto {
+    font-size: 16px;
+    line-height: 30px;
   }
   .secao-inicial .texto-inicial a {
     margin: 0 auto;
@@ -203,15 +213,17 @@ header .btn-menu-header {
 }
 @media screen and (max-width: 768px) {
   .secao-inicial .texto-inicial {
-    padding: 60px 0;
+    padding: 30px 0;
   }
   .secao-inicial .texto-inicial h3 {
-    font-size: 16px;
-    border: 1px solid red;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 20px;
   }
   .secao-inicial .texto-inicial p {
     width: 90%;
-    font-size: 18px;
+    font-size: 25px;
   }
   .img-secao-inicial {
     margin: 0 auto;
@@ -227,15 +239,14 @@ header .btn-menu-header {
   }
 }
 .secao-servicos {
-  height: 80vh;
   background-color: #FCCB05;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 100px 20px;
 }
 .secao-servicos h2 {
-  font-size: 40px;
   margin-bottom: 60px;
   color: #ffffff;
   text-align: center;
@@ -245,6 +256,8 @@ header .btn-menu-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
   gap: 50px;
 }
 .servicos .servico {
@@ -267,16 +280,33 @@ header .btn-menu-header {
 }
 .servicos .servico h4 {
   padding: 10px 0px;
-  font-size: 14px;
   color: #fa9b04;
 }
 .servicos .servico p {
   padding: 0px 10px;
-  font-size: 12px;
   text-align: center;
   color: #151515;
 }
 
+.veja-mais {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1210px) {
+  .secao-servicos {
+    padding: 100px 170px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .secao-servicos {
+    padding: 100px 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .secao-servicos {
+    padding: 50px 20px;
+  }
+}
 .secao-calltoAction {
   width: 100%;
   display: flex;
@@ -289,7 +319,9 @@ header .btn-menu-header {
   width: 50%;
 }
 .img-toAction img {
+  display: block;
   width: 410px;
+  height: 100%;
 }
 
 .txt-toAction {
@@ -323,10 +355,33 @@ header .btn-menu-header {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 992px) {
+  .secao-calltoAction {
+    background-color: rgba(251, 189, 5, 0.8078431373);
+  }
+  .secao-calltoAction .img-toAction {
+    width: 100%;
+  }
+  .secao-calltoAction .img-toAction img {
+    width: 100%;
+    max-height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.3;
+  }
+  .secao-calltoAction .txt-toAction {
+    position: absolute;
+    gap: 40;
+    height: auto;
+  }
+  .secao-calltoAction .txt-toAction .btn-calltoaction {
+    background-color: #ffffff;
+    color: #fa9b04;
+  }
+}
 .secao-cases {
   width: 100%;
-  height: 85vh;
-  padding: 60px 0px;
+  padding: 100px 20px;
 }
 .secao-cases h2 {
   text-align: center;
@@ -342,6 +397,8 @@ header .btn-menu-header {
   gap: 40px;
 }
 .cases .case-card {
+  box-sizing: content-box;
+  padding: 20px 0;
   width: 600px;
   border-radius: 20px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -384,11 +441,32 @@ header .btn-menu-header {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 992px) {
+  .cases {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .secao-cases {
+    padding: 50px 20px;
+  }
+  .secao-cases .cases .case-card {
+    flex-direction: column;
+    position: relative;
+  }
+  .secao-cases .cases .case-card .card-text {
+    margin-top: 300px;
+  }
+  .secao-cases .cases .case-card .card-img {
+    position: absolute;
+    top: 0;
+  }
+}
 .secao-clientes {
-  margin-top: 60px;
   width: 100%;
-  height: 80vh;
-  padding: 20px 0px;
+  padding: 100px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .secao-clientes h2 {
   text-align: center;
@@ -396,24 +474,34 @@ header .btn-menu-header {
 }
 
 .clientes {
-  width: 100%;
-  margin: 0 auto;
-  padding: 30px 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.clientes .cliente {
-  display: flex;
-  flex-direction: column;
+  margin-top: 30px;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
-  align-items: center;
-  gap: 25px;
+  gap: 40px;
 }
-.clientes .cliente img {
-  width: 150px;
+.clientes img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+@media screen and (max-width: 768px) {
+  .secao-clientes {
+    padding: 50px 20px;
+  }
+  .secao-clientes .clientes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .secao-clientes .clientes img {
+    gap: 100px;
+  }
+}
 .barra-final {
   width: 100%;
   height: 40px;
@@ -432,82 +520,140 @@ header .btn-menu-header {
 
 footer {
   width: 100%;
-  height: 50vh;
+  padding: 70px 0;
   margin: 0 auto;
-  padding-top: 60px;
   background-color: #FCCB05;
+}
+footer p {
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+}
+footer address {
+  color: #ffffff;
+}
+footer i {
+  color: #ffffff;
 }
 
 .secao-footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.secao-footer .secao-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.secao-footer .secao-logo img {
+  width: 75px;
+}
+
+.secao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
-}
-.secao-footer .secao {
   width: 20%;
-  padding: 0px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
-.secao-footer .secao h3 {
-  font-weight: 400;
+.secao h3 {
   color: #ffffff;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.secao-footer .secao a {
-  font-size: 14px;
-  text-align: left;
-  color: #ffffff;
-  line-height: 30px;
-}
-.secao-footer .secao p {
   margin-bottom: 20px;
-  font-size: 14px;
-  text-align: left;
-  color: #ffffff;
-  line-height: 30px;
+  font-weight: 500;
 }
-.secao-footer .secao i {
-  margin-top: 20px;
-  font-size: 20px;
-  margin-right: 20px;
-  color: #ffffff;
-  line-height: 30px;
+
+.secao-sobre-nos {
+  padding-left: 70px;
 }
-.secao-footer .secao address {
-  margin-top: 20px;
-  font-size: 14px;
-  text-align: left;
-  color: #ffffff;
-  line-height: 30px;
+
+@media screen and (max-width: 992px) {
+  footer .secao-footer .secao-sobre-nos {
+    padding-left: 0;
+  }
 }
-.secao-footer form {
+.secao-servicos-detalhado {
+  background-color: #E2E2E2;
+}
+.secao-servicos-detalhado .secao-servicos-detalhado-maximo {
+  padding: 100px 60px;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
-}
-.secao-footer form input {
-  font-size: 11px;
-  width: 100%;
-  padding: 5px;
-  border: none;
-  border-radius: 15px;
-}
-.secao-footer form button {
-  width: 100%;
+  gap: 50px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 5px 20px;
-  font-size: 10px;
-  border: 1px solid #432921;
-  border-radius: 20px;
-  background-color: #fa9b04;
-  color: #ffffff;
-  cursor: pointer;
+}
+.secao-servicos-detalhado .secao-servicos-detalhado-maximo img {
+  display: block;
+  width: 50%;
+}
+
+.secao-descricoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+}
+.secao-descricoes .descricao {
+  margin: 0 auto;
+  text-align: center;
+}
+.secao-descricoes .descricao .elipse {
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 0 7px;
+}
+.secao-descricoes .descricao .elipse i {
+  text-align: center;
+  font-size: 30px;
+  color: #FCCB05;
+}
+.secao-descricoes .descricao h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #432921;
+}
+.secao-descricoes .descricao p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .secao-servicos-detalhado .secao-servicos-detalhado-maximo img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .secao-servicos-detalhado .secao-servicos-detalhado-maximo {
+    padding: 50px 20px;
+  }
+  .secao-servicos-detalhado .secao-descricoes {
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.suporte-site {
+  padding: 100px 0;
+  text-align: center;
+}
+.suporte-site h2 {
+  margin-bottom: 30px;
+}
+.suporte-site p {
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

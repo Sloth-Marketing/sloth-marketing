@@ -1,8 +1,9 @@
 .secao-clientes {
-    margin-top: 60px;
+    // margin-top: 60px;
     width: 100%;
-    height: 80vh;
-    padding: 20px 0px;
+    padding: 100px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
     h2{
         text-align: center;
         color: $marrom;
@@ -10,17 +11,32 @@
 }
 
 .clientes {
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px 10px;
-    @include Flex(space-evenly, center);
-    .cliente {
-        @include Flexcolumn(center,center);
-        gap: 25px;
-        img {
-            width: 150px;
+    margin-top: 30px;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 40px;
+    
+    img {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: 100px;
+        object-fit: contain;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .secao-clientes {
+        padding: 50px 20px;
+        .clientes {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            img {
+                gap: 100px;
+            }
         }
     }
-    
 }

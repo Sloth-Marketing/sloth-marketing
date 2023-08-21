@@ -25,7 +25,7 @@ html {
 
 h2 {
     font-size: 40px;
-    // font-weight: 600;
+    color: $marrom;
 }
 
 a {
@@ -34,6 +34,10 @@ a {
 
 ul {
     list-style: none;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 //MIXINS
@@ -62,3 +66,16 @@ ul {
 @import './secaoClientes';
 @import './barraFinal';
 @import './footer';
+@import './secaoServicosDetalhados';
+@import './secaoSuporteSite';
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+

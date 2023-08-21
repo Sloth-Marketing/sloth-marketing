@@ -8,7 +8,9 @@
     width: 50%;
 
     img {
+        display: block;
         width: 410px;
+        height: 100%;
     }
 }
 
@@ -40,6 +42,33 @@
 
         &:hover {
             transform: scale(1.1);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .secao-calltoAction {
+        background-color: #fbbd05ce;
+        .img-toAction {
+            width: 100%;
+            
+            img {
+                width: 100%;
+                max-height: 50vh;
+                object-fit: cover;
+                opacity: 0.3;
+            }
+        }
+
+        .txt-toAction {
+            position: absolute;
+            gap: 40;
+            height: auto;
+
+            .btn-calltoaction {
+                background-color: $branco;
+                color: $amarelo-escuro;
+            }
         }
     }
 }
