@@ -1,0 +1,167 @@
+.inicio-projetos {
+    width: 100%;
+    padding: 80px;
+    @include Flexcolumn(center, center);
+    gap: 30px;
+
+    h2 {
+        color: $marrom;
+    }
+
+    p {
+        font-size: 16px;
+        color: $preto;
+    }
+
+    .traço {
+        width: 2px;
+        background-color: $cinza ;
+        height: 120px;
+    }
+
+}
+
+.retangulo {
+    width: 85%;
+    height: 150px;
+    margin: 0 auto;
+    padding: 20px;
+    @include Flex(space-around, center);
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    .infos {
+        @include Flex(center, center);
+        gap: 15px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            color: $preto;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            color: $preto;
+        }
+    }
+}
+
+.secao-projetos {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.apresentacao {
+    background-color: $cinza;
+    @include Flex(center, center);
+    gap: 20px;
+    padding: 20px;
+
+    img {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .apresentacao-txt {
+        width: 50%;
+        padding: 20px;
+        text-align: justify;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        li {
+            padding: 10px 0px;
+            i {
+                margin-right: 10px;
+                color: $amarelo-escuro;
+            }
+        }
+    }
+}
+
+.case-clientes {
+    width: 100%;
+    margin: 0 auto;
+    @include Flexcolumn(center, center);
+
+    .cliente {
+        width: 100%;
+        height: 75vh;
+        margin: 0 auto;
+        @include Flex(space-around, center);
+
+        &:nth-child(even) {
+            flex-direction: row-reverse !important;
+            background-color: $cinza;
+        }
+
+        .cliente-txt {
+            width: 50%;
+            padding-left: 100px;
+            @include Flexcolumn(center, flex-start);
+            gap: 20px;
+
+            h3 {
+                font-size: 30px;
+                text-align: left;
+                font-weight: 400;
+            }
+
+            p {
+                width: 500px;
+                font-size: 16px;
+            }
+
+            a {
+                color: $branco;
+                padding: 10px 30px;
+                background-color: $amarelo-claro;
+                border-radius: 20px;
+                font-size: 16px;
+                letter-spacing: 1px;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .cliente-img {
+            width: 50%;
+            margin: 0 auto;
+
+            img {
+                display: block;
+                width: 60%;
+                margin-left: 100px;
+            }
+        }
+    }
+
+    .btn-maisProjetos {
+        border: none;
+        color: $branco;
+        padding: 10px 30px;
+        background-color: $amarelo-claro;
+        border-radius: 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
