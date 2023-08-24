@@ -581,7 +581,7 @@ footer i {
   }
 }
 .secao-servicos-detalhado {
-  background-color: #E2E2E2;
+  background-color: rgba(226, 226, 226, 0.1843137255);
 }
 .secao-servicos-detalhado .secao-servicos-detalhado-maximo {
   padding: 100px 60px;
@@ -813,6 +813,17 @@ footer i {
 }
 .case-clientes .btn-maisProjetos:hover {
   transform: scale(1.1);
+}
+
+.img-desenvolvimento {
+  width: 50%;
+  display: block;
+  max-width: 700px;
+  align-self: flex-end;
+}
+
+.secao-fazemos {
+  background-color: rgba(226, 226, 226, 0.1843137255);
 }
 
 @media screen and (max-width: 768px) {
