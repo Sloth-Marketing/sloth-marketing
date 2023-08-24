@@ -7,6 +7,40 @@
 }
 
 .secao-fazemos {
-    
     background-color: $cinza;
+    padding: 50px 20px;
+    h2 {
+        color: $marrom;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .servicos {
+        gap: 60px;
+        .servico {
+            width: 230px;
+            height: 230px;
+
+            &:hover {
+                transform: scale(1.02);
+
+            }
+
+            img {
+                width: 50px;
+            }
+
+            h4 {
+                color: $preto;
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.secao-icones {
+    background-color: $amarelo-claro;
 }
