@@ -876,6 +876,10 @@ footer i {
   transform: scale(1.1);
 }
 
+.secao-topo {
+  height: 75vh;
+}
+
 .img-desenvolvimento {
   width: 50%;
   display: block;
@@ -885,7 +889,7 @@ footer i {
 
 .secao-fazemos {
   background-color: rgba(226, 226, 226, 0.1843137255);
-  padding: 50px 20px;
+  padding: 70px 20px;
 }
 .secao-fazemos h2 {
   color: #432921;
@@ -915,6 +919,24 @@ footer i {
 
 .secao-icones {
   background-color: #FCCB05;
+}
+.secao-icones .secao-servicos-detalhado-maximo {
+  padding: 50px 60px;
+}
+.secao-icones .secao-servicos-detalhado-maximo img {
+  width: 40%;
+}
+.secao-icones .secao-servicos-detalhado-maximo .secao-descricoes {
+  gap: 50px;
+}
+.secao-icones .secao-servicos-detalhado-maximo .secao-descricoes .descricao h3 {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.secao-icones .secao-servicos-detalhado-maximo .secao-descricoes .descricao p {
+  text-align: justify;
+  color: #151515;
 }
 
 @media screen and (max-width: 768px) {
