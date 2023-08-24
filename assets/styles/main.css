@@ -824,6 +824,36 @@ footer i {
 
 .secao-fazemos {
   background-color: rgba(226, 226, 226, 0.1843137255);
+  padding: 50px 20px;
+}
+.secao-fazemos h2 {
+  color: #432921;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.secao-fazemos .servicos {
+  gap: 60px;
+}
+.secao-fazemos .servicos .servico {
+  width: 230px;
+  height: 230px;
+}
+.secao-fazemos .servicos .servico:hover {
+  transform: scale(1.02);
+}
+.secao-fazemos .servicos .servico img {
+  width: 50px;
+}
+.secao-fazemos .servicos .servico h4 {
+  color: #151515;
+  font-size: 18px;
+}
+.secao-fazemos .servicos .servico p {
+  font-size: 14px;
+}
+
+.secao-icones {
+  background-color: #FCCB05;
 }
 
 @media screen and (max-width: 768px) {
