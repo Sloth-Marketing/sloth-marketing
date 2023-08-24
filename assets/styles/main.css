@@ -380,6 +380,32 @@ header .btn-menu-header {
     color: #fa9b04;
   }
 }
+@media screen and (max-width: 768px) {
+  .secao-calltoAction {
+    background-color: rgba(251, 189, 5, 0.8078431373);
+    overflow: hidden;
+  }
+  .secao-calltoAction .img-toAction {
+    width: 100%;
+  }
+  .secao-calltoAction .img-toAction img {
+    width: 100%;
+    max-height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.3;
+    transform: scale(1.5);
+  }
+  .secao-calltoAction .txt-toAction {
+    position: absolute;
+    gap: 40;
+    height: auto;
+  }
+  .secao-calltoAction .txt-toAction .btn-calltoaction {
+    background-color: #ffffff;
+    color: #fa9b04;
+  }
+}
 .secao-cases {
   width: 100%;
   padding: 100px 20px;
@@ -536,6 +562,7 @@ footer address {
 }
 footer i {
   color: #ffffff;
+  font-size: 30px;
 }
 
 .secao-footer {
@@ -570,14 +597,46 @@ footer i {
   margin-bottom: 20px;
   font-weight: 500;
 }
+.secao .redes-sociais {
+  display: flex;
+  gap: 15px;
+}
 
 .secao-sobre-nos {
   padding-left: 70px;
 }
 
+.secao-servicos-footer {
+  padding: 0;
+}
+
 @media screen and (max-width: 992px) {
   footer .secao-footer .secao-sobre-nos {
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 50px 0;
+  }
+  footer .secao-footer {
+    padding: 0 30px;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+  }
+  footer .secao-footer .secao {
+    width: 100%;
+    align-items: center;
+  }
+  footer .secao-footer .secao-logo p {
+    text-align: center;
+  }
+  footer .secao-footer .secao-servicos-footer, footer .secao-footer .secao-sobre-nos {
+    display: none;
+  }
+  .barra-final img {
+    display: none;
   }
 }
 .secao-servicos-detalhado {
@@ -642,11 +701,13 @@ footer i {
   }
 }
 .suporte-site {
-  padding: 100px 0;
+  padding: 60px 0;
   text-align: center;
 }
 .suporte-site h2 {
   margin-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
 }
 .suporte-site p {
   margin: 0 auto;

@@ -72,3 +72,33 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .secao-calltoAction {
+        background-color: #fbbd05ce;
+        overflow: hidden;
+        .img-toAction {
+            width: 100%;
+            
+            img {
+                width: 100%;
+                max-height: 50vh;
+                object-fit: cover;
+                opacity: 0.3;
+                transform: scale(1.5);
+                
+            }
+        }
+
+        .txt-toAction {
+            position: absolute;
+            gap: 40;
+            height: auto;
+
+            .btn-calltoaction {
+                background-color: $branco;
+                color: $amarelo-escuro;
+            }
+        }
+    }
+}
