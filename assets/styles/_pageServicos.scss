@@ -2,10 +2,11 @@
     width: 100%;
     @include Flex(Space-around, center);
     height: 75vh;
+
     .texto-topo {
         width: 50%;
         height: auto;
-        padding: 30px 10px;
+        padding: 30px 30px;
         margin-top: 60px;
         @include Flexcolumn(center, flex-start);
         gap: 25px;
@@ -24,6 +25,7 @@
             background-color: $amarelo-claro;
             border-radius: 20px;
             transition: all .2s ease-in-out;
+
             &:hover {
                 transform: scale(1.1);
             }
@@ -39,13 +41,16 @@
 .secao-fazemos {
     background-color: $cinza;
     padding: 70px 20px;
+
     h2 {
         color: $marrom;
         font-size: 30px;
         margin-bottom: 30px;
     }
+
     .servicos {
         gap: 60px;
+
         .servico {
             // width: 230px;
             // height: 230px;
@@ -73,7 +78,8 @@
 
 .secao-icones {
     background-color: $amarelo-claro;
-    .secao-servicos-detalhado-maximo{
+
+    .secao-servicos-detalhado-maximo {
         padding: 50px 60px;
 
         img {
@@ -82,18 +88,69 @@
 
         .secao-descricoes {
             gap: 50px;
-        .descricao {
-            h3 {
-                font-weight: 600;
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
 
-            p {
-                text-align: justify;
-                color: $preto;
+            .descricao {
+                h3 {
+                    font-weight: 600;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    text-align: justify;
+                    color: $preto;
+                }
             }
         }
     }
+}
+
+.portfolio-desenvolvimento {
+    width: 100%;
+    height: 85vh;
+    margin: 0 auto;
+    border: 1px solid red;
+    @include Flexcolumn(center, center);
+
+}
+
+.secao-sites {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+    @include Flex(space-between, center);
+    gap: 120px;
+    
+    .tipo-sites {
+        width: 50%;
     }
+
+    
+    
+}
+
+
+
+.swiper {
+    border: 1px solid red;
+    width: 40%;
+    height: 568px;
+
+    .swiper-wrapper {
+        text-align: right;
+        width: 100%;
+        border: 1px solid red;
+        
+        .swiper-slide {
+            text-align: center;
+            img {
+                width: 400px;
+                height: 600px;
+                border-radius: 20px;
+                box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+            }
+        }
+        
+    }
+    
 }
