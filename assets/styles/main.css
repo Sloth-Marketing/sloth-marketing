@@ -930,7 +930,7 @@ footer i {
 .secao-topo .texto-topo {
   width: 50%;
   height: auto;
-  padding: 30px 10px;
+  padding: 30px 30px;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -1006,6 +1006,50 @@ footer i {
 .secao-icones .secao-servicos-detalhado-maximo .secao-descricoes .descricao p {
   text-align: justify;
   color: #151515;
+}
+
+.portfolio-desenvolvimento {
+  width: 100%;
+  height: 85vh;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secao-sites {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+.secao-sites .tipo-sites {
+  width: 50%;
+}
+
+.swiper {
+  border: 1px solid red;
+  width: 40%;
+  height: 568px;
+}
+.swiper .swiper-wrapper {
+  text-align: right;
+  width: 100%;
+  border: 1px solid red;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 768px) {
