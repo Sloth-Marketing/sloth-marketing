@@ -1,13 +1,39 @@
 .secao-topo {
+    width: 100%;
+    @include Flex(Space-around, center);
     height: 75vh;
+    .texto-topo {
+        width: 50%;
+        height: auto;
+        padding: 30px 10px;
+        margin-top: 60px;
+        @include Flexcolumn(center, flex-start);
+        gap: 25px;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            color: $branco;
+            padding: 10px 35px;
+            background-color: $amarelo-claro;
+            border-radius: 20px;
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
 }
 
 .img-desenvolvimento {
     width: 50%;
     display: block;
-    max-width: 700px;
-    align-self: flex-end;
-    // padding: 60px 60px 0 60px;
 }
 
 .secao-fazemos {
@@ -21,8 +47,8 @@
     .servicos {
         gap: 60px;
         .servico {
-            width: 230px;
-            height: 230px;
+            // width: 230px;
+            // height: 230px;
 
             &:hover {
                 transform: scale(1.02);
