@@ -345,7 +345,7 @@ header .btn-menu-header {
 .txt-toAction a {
   color: #ffffff;
   padding: 10px 30px;
-  background-color: #FCCB05;
+  background-color: #fa9b04;
   border-radius: 20px;
   font-size: 16px;
   letter-spacing: 1px;
@@ -721,7 +721,6 @@ footer i {
 .inicio-projetos {
   width: 100%;
   padding: 80px 60px;
-  max-width: 1400px;
   margin: 0 auto;
   margin-top: 75px;
   display: flex;
@@ -777,7 +776,6 @@ footer i {
 .secao-projetos {
   width: 100%;
   margin: 0 auto;
-  max-width: 1400px;
 }
 
 .apresentacao {
@@ -813,21 +811,32 @@ footer i {
   width: 100%;
   margin: 0 auto;
 }
-.case-clientes .cliente {
-  border: 1px solid red;
+.case-clientes .cliente-fundo {
   width: 100%;
-  height: 650px;
+}
+.case-clientes .cliente-fundo:nth-child(even) {
+  background-color: rgba(226, 226, 226, 0.1843137255);
+}
+.case-clientes .cliente-fundo:nth-child(even) .cliente {
+  flex-direction: row-reverse;
+}
+.case-clientes .cliente-fundo:nth-child(even) .cliente .cliente-txt h3, .case-clientes .cliente-fundo:nth-child(even) .cliente .cliente-txt p {
+  padding-left: 30px;
+}
+.case-clientes .cliente-fundo:nth-child(even) .cliente .cliente-txt a {
+  margin-left: 30px;
+}
+.case-clientes .cliente {
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
+  height: 650px;
+  padding: 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.case-clientes .cliente:nth-child(even) {
-  flex-direction: row-reverse;
-  background-color: rgba(226, 226, 226, 0.1843137255);
-}
 .case-clientes .cliente .cliente-txt {
-  border: 1px solid red;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -839,9 +848,11 @@ footer i {
   font-size: 30px;
   text-align: left;
   font-weight: 400;
+  padding-right: 30px;
 }
 .case-clientes .cliente .cliente-txt p {
   font-size: 16px;
+  padding-right: 30px;
 }
 .case-clientes .cliente .cliente-txt a {
   color: #ffffff;
@@ -855,16 +866,13 @@ footer i {
 .case-clientes .cliente .cliente-txt a:hover {
   transform: scale(1.1);
 }
-.case-clientes .cliente .cliente-img {
-  margin: 0 auto;
-  border: 1px solid red;
-}
 .case-clientes .cliente .cliente-img img {
   display: block;
   width: 500px;
-  border: 1px solid red;
 }
 .case-clientes .btn-maisProjetos {
+  display: block;
+  margin: 0 auto;
   border: none;
   color: #ffffff;
   padding: 10px 30px;
@@ -889,6 +897,10 @@ footer i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .cliente-fundo .cliente .cliente-img img {
+    display: block;
+    width: 300px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -918,12 +930,49 @@ footer i {
   .apresentacao .apresentacao-txt {
     width: 100%;
   }
+  .case-clientes .cliente-fundo:nth-child(even) .cliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
+  .case-clientes .cliente-fundo:nth-child(even) .cliente h3 {
+    text-align: center;
+  }
+  .case-clientes .cliente-fundo:nth-child(even) .cliente h3, .case-clientes .cliente-fundo:nth-child(even) .cliente p {
+    padding-left: 0 !important;
+  }
+  .case-clientes .cliente-fundo:nth-child(even) .cliente a {
+    margin: 0 auto !important;
+  }
+  .case-clientes .cliente {
+    height: auto;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .case-clientes .cliente .cliente-txt {
+    width: 100%;
+    padding: 20px 20px 0 20px;
+  }
+  .case-clientes .cliente .cliente-txt h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .case-clientes .cliente .cliente-txt a {
+    margin: 0 auto !important;
+  }
+  .case-clientes .cliente .cliente-img img {
+    display: block;
+    width: 300px;
+  }
 }
 .secao-topo {
-<<<<<<< HEAD
-  height: 75vh;
-}
-=======
   width: 100%;
   height: 73vh;
   display: flex;
@@ -957,7 +1006,6 @@ footer i {
 .secao-topo .texto-topo a:hover {
   transform: scale(1.1);
 }
->>>>>>> 96439b48b92c35d386e900bd803baaf5f1145514
 
 .img-desenvolvimento {
   width: 50%;

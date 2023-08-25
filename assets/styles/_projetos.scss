@@ -6,7 +6,7 @@
 .inicio-projetos {
     width: 100%;
     padding: 80px 60px;
-    max-width: 1400px;
+    // max-width: 1400px;
     margin: 0 auto;
     margin-top: 75px;
     @include Flexcolumn(center, center);
@@ -62,7 +62,7 @@
 .secao-projetos {
     width: 100%;
     margin: 0 auto;
-    max-width: 1400px;
+    
 }
 
 .apresentacao {
@@ -100,37 +100,49 @@
     width: 100%;
     margin: 0 auto;
 
-    .cliente {
-        border: 1px solid red;
+    .cliente-fundo {
         width: 100%;
-        height: 650px;
-        margin: 0 auto;
-        // @include Flex(space-between, center);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
         &:nth-child(even) {
-            flex-direction: row-reverse;
             background-color: $cinza;
+            
+            .cliente {
+                flex-direction: row-reverse;
+                .cliente-txt{
+                    h3, p {
+                        padding-left: 30px;
+                    }
+
+                    a {
+                        margin-left: 30px;
+                    }
+                }
+            }
         }
+    }
+
+    .cliente {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: 650px;
+        padding: 0 50px;
+        @include Flex(space-between, center);
 
         .cliente-txt {
-            border: 1px solid red;
             width: 50%;
-            // padding-left: 100px;
             @include Flexcolumn(center, flex-start);
             gap: 20px;
 
-            h3 {
+            h3 {    
                 font-size: 30px;
                 text-align: left;
                 font-weight: 400;
+                padding-right: 30px;
             }
 
             p {
-                // width: 500px;
                 font-size: 16px;
+                padding-right: 30px;
             }
 
             a {
@@ -149,20 +161,16 @@
         }
 
         .cliente-img {
-            // width: 50%;
-            margin: 0 auto;
-            border: 1px solid red;
-
             img {
                 display: block;
                 width: 500px;
-                // margin-left: 100px;
-                border: 1px solid red;
             }
         }
     }
 
     .btn-maisProjetos {
+        display: block;
+        margin: 0 auto;
         border: none;
         color: $branco;
         padding: 10px 30px;
@@ -188,7 +196,20 @@
     .apresentacao {
         @include Flexcolumn(center, center);
     }
+ 
+    .cliente-fundo {
+        .cliente {
+            .cliente-img {
+                img {
+                    display: block;
+                    width: 300px;
+                }
+            }
+        }
+    }
 }
+    
+
 
 @media screen and (max-width: 768px) {
     .inicio-projetos {
@@ -216,7 +237,6 @@
                 }
             }
         }
-        
     }
 
     .apresentacao {
@@ -229,4 +249,57 @@
             width: 100%;
         }
     }
+
+    .case-clientes {
+        .cliente-fundo {
+            &:nth-child(even) {
+                .cliente {
+                    @include Flexcolumn(center, center);
+                    flex-direction: column-reverse;
+                    padding-left: 0;
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    h3, p {
+                        padding-left: 0 !important;
+                        
+                    }
+
+                    a {
+                        margin: 0 auto !important;
+                    }
+                }
+            }
+        }
+
+        .cliente {
+            height: auto;
+            padding: 60px 0px;
+            @include Flexcolumn(center, center);
+            flex-direction: column-reverse;
+
+            .cliente-txt {
+                width: 100%;
+                padding: 20px 20px 0 20px;
+                h3 {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                a {
+                    margin: 0 auto !important;
+                }   
+            }
+        
+            .cliente-img {
+                img {
+                    display: block;
+                    width: 300px;
+                }
+            }
+        }
+    
+    }   
 }
