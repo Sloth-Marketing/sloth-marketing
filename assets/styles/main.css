@@ -881,12 +881,6 @@ footer i {
   transform: scale(1.1);
 }
 
-<<<<<<< HEAD
-.secao-topo {
-  height: 75vh;
-}
-
-=======
 @media screen and (max-width: 992px) {
   .retangulo {
     width: 100%;
@@ -926,12 +920,44 @@ footer i {
     width: 100%;
   }
 }
->>>>>>> rodrigo
+.secao-topo {
+  width: 100%;
+  display: flex;
+  justify-content: Space-around;
+  align-items: center;
+  height: 75vh;
+}
+.secao-topo .texto-topo {
+  width: 50%;
+  height: auto;
+  padding: 30px 10px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+.secao-topo .texto-topo h2 {
+  font-size: 40px;
+}
+.secao-topo .texto-topo p {
+  font-size: 18px;
+}
+.secao-topo .texto-topo a {
+  color: #ffffff;
+  padding: 10px 35px;
+  background-color: #FCCB05;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.secao-topo .texto-topo a:hover {
+  transform: scale(1.1);
+}
+
 .img-desenvolvimento {
   width: 50%;
   display: block;
-  max-width: 700px;
-  align-self: flex-end;
 }
 
 .secao-fazemos {
@@ -945,10 +971,6 @@ footer i {
 }
 .secao-fazemos .servicos {
   gap: 60px;
-}
-.secao-fazemos .servicos .servico {
-  width: 230px;
-  height: 230px;
 }
 .secao-fazemos .servicos .servico:hover {
   transform: scale(1.02);
