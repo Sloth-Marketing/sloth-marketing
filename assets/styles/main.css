@@ -660,10 +660,7 @@ footer i {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 70px;
-}
-.secao-descricoes .descricao {
-  margin: 0 auto;
-  text-align: center;
+  align-content: left;
 }
 .secao-descricoes .descricao .elipse {
   background-color: #ffffff;
@@ -672,7 +669,6 @@ footer i {
   padding: 0 7px;
 }
 .secao-descricoes .descricao .elipse i {
-  text-align: center;
   font-size: 30px;
   color: #FCCB05;
 }
@@ -1051,13 +1047,16 @@ footer i {
   gap: 50px;
 }
 .secao-icones .secao-servicos-detalhado-maximo .secao-descricoes .descricao h3 {
+  text-align: left;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .secao-icones .secao-servicos-detalhado-maximo .secao-descricoes .descricao p {
-  text-align: justify;
-  color: #151515;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #525252;
 }
 
 .portfolio-desenvolvimento {
@@ -1123,6 +1122,26 @@ footer i {
   height: fit-content;
   border-radius: 15px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.fundo-gradient {
+  width: 100%;
+  height: 100vh;
+  animation: gradient 10s infinite alternate;
+}
+@keyframes gradient {
+  from {
+    background-color: #013666;
+  }
+  to {
+    background-color: #01619a;
+  }
+}
+.fundo-gradient .descricao-marketing h3 {
+  color: #ffffff;
+}
+.fundo-gradient .descricao-marketing p {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {

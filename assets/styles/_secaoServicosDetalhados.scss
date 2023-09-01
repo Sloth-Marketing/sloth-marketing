@@ -20,9 +20,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
+    align-content: left;
     .descricao {
-        margin: 0 auto;
-        text-align: center;
 
         .elipse {
             background-color: $branco;
@@ -31,12 +30,10 @@
             padding: 0 7px;
             
             i {
-                text-align: center;
                 font-size: 30px;
                 color: $amarelo-claro;
             }
         }
-       
 
         h3 {
             font-size: 16px;
