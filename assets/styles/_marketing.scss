@@ -1,7 +1,7 @@
 .fundo-gradient {       
   width: 100%;
   height:100vh;
-  animation: gradient 10s infinite alternate;
+  animation: gradient 6s infinite alternate;
   
   @keyframes gradient {
     from {background-color: #013666;}
@@ -19,5 +19,6 @@
   }
 
 }
+
 
 
