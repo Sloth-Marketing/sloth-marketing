@@ -665,10 +665,11 @@ footer i {
 .secao-descricoes .descricao .elipse {
   background-color: #ffffff;
   display: inline-block;
-  border-radius: 100px;
-  padding: 0 7px;
+  border-radius: 100%;
+  padding: 0px 8px;
 }
 .secao-descricoes .descricao .elipse i {
+  padding-top: 6px;
   font-size: 30px;
   color: #FCCB05;
 }
@@ -1031,6 +1032,13 @@ footer i {
 }
 .secao-fazemos .servicos .servico p {
   font-size: 14px;
+  text-align: left;
+}
+.secao-fazemos .servicos .servico i {
+  font-size: 24px;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .secao-icones {
@@ -1052,8 +1060,8 @@ footer i {
   margin-bottom: 10px;
 }
 .secao-icones .secao-servicos-detalhado-maximo .secao-descricoes .descricao p {
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
   text-align: left;
   color: #ffffff;
 }
@@ -1122,6 +1130,10 @@ footer i {
   height: fit-content;
   border-radius: 15px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.secaoMkt-servicos .servicosMkt {
+  gap: 25px;
 }
 
 .fundo-gradient {

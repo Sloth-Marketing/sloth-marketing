@@ -72,6 +72,14 @@
 
             p {
                 font-size: 14px;
+                text-align: left;
+            }
+
+            i {
+                font-size: 24px;
+                display: block;
+                margin-top: 20px;
+                cursor: pointer;
             }
         }
     }
@@ -99,8 +107,8 @@
                 }
 
                 p {
-                    font-size: 13px;
-                    font-weight: 300;
+                    font-size: 14px;
+                    font-weight: 400;
                     text-align: left;
                     color: $branco;
                 }

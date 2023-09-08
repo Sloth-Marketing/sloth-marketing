@@ -1,20 +1,32 @@
-.fundo-gradient {       
+.secaoMkt-servicos {
+ 
+  .servicosMkt {
+    gap: 25px;
+  }
+}
+
+.fundo-gradient {
   width: 100%;
-  height:100vh;
+  height: 100vh;
   animation: gradient 6s infinite alternate;
-  
+
   @keyframes gradient {
-    from {background-color: #013666;}
-    to {background-color: #044e78;}
+    from {
+      background-color: #013666;
+    }
+
+    to {
+      background-color: #044e78;
+    }
   }
 
   .descricao-marketing {
     h3 {
-        color: $branco;
+      color: $branco;
     }
 
     p {
-        color: $branco;
+      color: $branco;
     }
   }
 
@@ -27,20 +39,30 @@
   margin-top: 10px;
 
   .swiper-wrapper {
-      text-align: right;
-      width: 100%;
+    text-align: right;
+    width: 100%;
 
-      .swiper-slide {
-          text-align: center;
-          img {
-              width: 280px;
-              height: fit-content;
-              border-radius: 15px;
-              box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-          }
+    .swiper-slide {
+      text-align: center;
+
+      img {
+        width: 280px;
+        height: fit-content;
+        border-radius: 15px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
       }
-      
+    }
+
   }
-  
+
 }
 
+// .suporteMkt {
+//   padding-top: 50px;
+//   padding-bottom: 10px;
+// }
+
+// .clintesMkt {
+//   padding: 20px 20px;
+//   margin-bottom: 60px;
+// }
