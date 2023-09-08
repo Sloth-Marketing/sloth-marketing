@@ -1144,6 +1144,25 @@ footer i {
   color: #ffffff;
 }
 
+.swiperMkt {
+  width: 600px;
+  height: 568px;
+}
+.swiperMkt .swiper-wrapper {
+  text-align: right;
+  width: 100%;
+}
+.swiperMkt .swiper-wrapper .swiper-slide {
+  text-align: center;
+}
+.swiperMkt .swiper-wrapper .swiper-slide img {
+  width: 280px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 30px;
