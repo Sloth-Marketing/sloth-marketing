@@ -1,6 +1,6 @@
 .secao-topo {
     width: 100%;
-    height: 73vh;
+    height: 80%;
     @include Flex(Space-around, center);
 
     .texto-topo {
@@ -31,12 +31,17 @@
             }
         }
     }
+
+    img {
+        margin-top: 50px;
+        width: 50%;
+    }
 }
 
-.img-desenvolvimento {
-    width: 50%;
-    display: block;
-}
+// .img-desenvolvimento {
+//     width: 50%;
+//     display: block;
+// }
 
 .secao-fazemos {
     background-color: $cinza;
@@ -94,10 +99,10 @@
                 }
 
                 p {
-                    font-size: 14px;
-                    font-weight: 500;
+                    font-size: 13px;
+                    font-weight: 300;
                     text-align: left;
-                    color: #525252;
+                    color: $branco;
                 }
 
             }
@@ -107,8 +112,9 @@
 
 .portfolio-desenvolvimento {
     width: 100%;
-    height: 85vh;
-    margin: 0 auto;
+    height: 40%;
+    margin: 0px auto;
+    padding: 60px 0px;
     @include Flexcolumn(center, center);
 
     a {
