@@ -50,6 +50,39 @@ header {
     a {
         color: $marrom;
     }
+
+    
+    .li-dropdow {
+        display: flex;
+        flex-direction: column;
+
+        .h3-solucoes {
+            color: $marrom;
+            font-weight: normal;
+        } 
+
+        &:hover .menu-dropdow {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            top: 25px;  
+        }
+    }
+
+    .menu-dropdow {
+        display: none;
+        position: absolute;
+        padding: 10px;
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+        background-color: $amarelo-claro;
+    }
+
+    .menu-dropdow li {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -81,6 +114,35 @@ header {
             overflow: hidden;
             transition: 0.5s;
             padding-right: 0px;
+
+            .menu-dropdow {
+                position: static;
+
+            }
+
+            .li-dropdow {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+        
+                .h3-solucoes {
+                    position: relative;
+                    color: $marrom;
+                    font-weight: normal;
+                    z-index: 5;
+                } 
+        
+                &:hover .menu-dropdow {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                &:hover {
+                    margin-top: 90px;
+                }
+            }
         }
     
         .ativar-menu {

@@ -81,6 +81,31 @@ header .btn-menu-header {
 .nav-menu ul a {
   color: #432921;
 }
+.nav-menu ul .li-dropdow {
+  display: flex;
+  flex-direction: column;
+}
+.nav-menu ul .li-dropdow .h3-solucoes {
+  color: #432921;
+  font-weight: normal;
+}
+.nav-menu ul .li-dropdow:hover .menu-dropdow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  top: 25px;
+}
+.nav-menu ul .menu-dropdow {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  background-color: #FCCB05;
+}
+.nav-menu ul .menu-dropdow li {
+  display: block;
+}
 
 @media screen and (max-width: 992px) {
   header {
@@ -111,6 +136,29 @@ header .btn-menu-header {
     overflow: hidden;
     transition: 0.5s;
     padding-right: 0px;
+  }
+  header .nav-menu ul .menu-dropdow {
+    position: static;
+  }
+  header .nav-menu ul .li-dropdow {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  header .nav-menu ul .li-dropdow .h3-solucoes {
+    position: relative;
+    color: #432921;
+    font-weight: normal;
+    z-index: 5;
+  }
+  header .nav-menu ul .li-dropdow:hover .menu-dropdow {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  header .nav-menu ul .li-dropdow:hover {
+    margin-top: 90px;
   }
   header .ativar-menu {
     height: 200px !important;
