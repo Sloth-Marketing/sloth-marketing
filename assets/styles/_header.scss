@@ -51,39 +51,44 @@ header {
         color: $marrom;
     }
 
-    
     .li-dropdow {
         display: flex;
         flex-direction: column;
 
         .h3-solucoes {
             color: $marrom;
-            font-weight: normal;
+            font-weight: 400;
+            font-size: 16px;
         } 
 
+        .menu-dropdow {
+            display: none;
+            position: absolute;
+            padding: 5px  15px;
+            -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.10);
+            -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.10);
+            box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.10);
+            background-color: $amarelo-claro;
+            width: 220px;
+            line-height: 40px;
+            top: 25px;
+        }
+
         &:hover .menu-dropdow {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px;
-            top: 25px;  
+            display: block;
         }
     }
 
-    .menu-dropdow {
-        display: none;
-        position: absolute;
-        padding: 10px;
-        -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-        background-color: $amarelo-claro;
+        // .menu-dropdow li {
+        //     display: block;
+
+        //     a {
+        //         font-size: 16px;
+        //     }
+        // }
     }
 
-    .menu-dropdow li {
-        display: block;
-    }
-}
+    
 
 @media screen and (max-width: 992px){
     header {
@@ -108,40 +113,36 @@ header {
             width: 100%;
             left: 0;
             @include Flexcolumn(center, center);
-            gap: 15px;
-            // box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.5);
             height: 0;
             overflow: hidden;
             transition: 0.5s;
             padding-right: 0px;
-
-            .menu-dropdow {
-                position: static;
-
-            }
+            gap: 15px;
 
             .li-dropdow {
-                width: 100%;
+                width: 90%;
+                border: 1px solid red;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
-        
+                
                 .h3-solucoes {
-                    position: relative;
                     color: $marrom;
                     font-weight: normal;
-                    z-index: 5;
+ 
                 } 
+
+                .menu-dropdow {
+                    // position: relative;
+                    // margin-top: 75px;
+                }
         
                 &:hover .menu-dropdow {
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 10px;
+                    width: 100%;
+                    height: auto;
+                    position: relative;        
                 }
-
-                &:hover {
-                    margin-top: 90px;
-                }
+                
             }
         }
     

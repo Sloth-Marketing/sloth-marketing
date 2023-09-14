@@ -87,23 +87,20 @@ header .btn-menu-header {
 }
 .nav-menu ul .li-dropdow .h3-solucoes {
   color: #432921;
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
-.nav-menu ul .li-dropdow:hover .menu-dropdow {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  top: 25px;
-}
-.nav-menu ul .menu-dropdow {
+.nav-menu ul .li-dropdow .menu-dropdow {
   display: none;
   position: absolute;
-  padding: 10px;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  padding: 5px 15px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
   background-color: #FCCB05;
+  width: 220px;
+  line-height: 40px;
+  top: 25px;
 }
-.nav-menu ul .menu-dropdow li {
+.nav-menu ul .li-dropdow:hover .menu-dropdow {
   display: block;
 }
 
@@ -131,34 +128,27 @@ header .btn-menu-header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
     padding-right: 0px;
-  }
-  header .nav-menu ul .menu-dropdow {
-    position: static;
+    gap: 15px;
   }
   header .nav-menu ul .li-dropdow {
-    width: 100%;
+    width: 90%;
+    border: 1px solid red;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
   header .nav-menu ul .li-dropdow .h3-solucoes {
-    position: relative;
     color: #432921;
     font-weight: normal;
-    z-index: 5;
   }
   header .nav-menu ul .li-dropdow:hover .menu-dropdow {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  header .nav-menu ul .li-dropdow:hover {
-    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    position: relative;
   }
   header .ativar-menu {
     height: 200px !important;
