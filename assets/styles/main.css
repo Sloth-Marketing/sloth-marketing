@@ -1244,7 +1244,7 @@ h2 {
   width: 50%;
 }
 .contato-direita h3 {
-  font-size: 29px;
+  font-size: 39px;
   text-align: center;
   color: #432921;
   padding-top: 100px;
@@ -1295,6 +1295,81 @@ h2 {
 }
 .telefone a:hover {
   transform: scale(1.1);
+}
+
+.sobre-topo {
+  background-image: url(/img/);
+  padding: 40px 0px;
+}
+.sobre-topo p {
+  margin-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.nosso-time {
+  width: 100%;
+  margin: 0 auto;
+}
+.nosso-time .time-fundo {
+  width: 100%;
+}
+.nosso-time .time-fundo:nth-child(even) {
+  background-color: rgba(226, 226, 226, 0.1843137255);
+}
+.nosso-time .time-fundo:nth-child(even) .time {
+  flex-direction: row-reverse;
+}
+.nosso-time .time-fundo:nth-child(even) .time .cliente-txt h3, .nosso-time .time-fundo:nth-child(even) .time .cliente-txt p {
+  padding-left: 30px;
+}
+.nosso-time .time-fundo:nth-child(even) .time .cliente-txt a {
+  margin-left: 30px;
+}
+
+.time {
+  width: 60%;
+  max-width: 1400px;
+  margin: 10px auto;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.time .time-txt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.time .time-txt h3 {
+  font-size: 30px;
+  text-align: left;
+  font-weight: 400;
+}
+.time .time-txt p {
+  font-size: 16px;
+}
+.time .time-txt a {
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #FCCB05;
+  border-radius: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+.time .time-txt a:hover {
+  transform: scale(1.1);
+}
+.time .time-img img {
+  display: block;
+  width: 320px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 768px) {
